@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
+body {
+  background-color: #eee7e6;
+  font-family: 'Francois One', sans-serif;
+  font-style: italic;
+  color: #333333;
+}
+
+#page-container {
+  position: relative;
+}
+
+#header {
+  background-color: #a1a0a0;
+  position: fixed;
+  top: 0;
+  min-height: 77px;
+  width: 100%;
+  padding: 0px 23px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+@media (max-width: 568px) {
+  #header {
+    flex-wrap: wrap;
+  }
+}
+
+#header-img {
+  padding: px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 27px;
+}
+@media (max-width: 568px) {
+  #header-img {
+    position: relative;
+  }
+}
+
+h1 {
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#nav-bar {
+  padding: 3px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 568px) {
+  #nav-bar {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.nav-link {
+  margin: 23px;
+  padding: 11px;
+  font-size: 19px;
+  color: #333333;
+}
+@media (max-width: 568px) {
+  .nav-link {
+    flex-direction: column;
+  }
+}
+
+button {
+  margin: 11px;
+  padding: 7px;
+  background-color: #d4d4d4;
+  border: 3px solid #333333;
+  border-radius: 9px;
+}
+@media (max-width: 568px) {
+  button {
+    flex-direction: column;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 127px;
+  margin-bottom: 23px;
+}
+.form-container h2 {
+  margin-bottom: 7px;
+}
+.form-container p {
+  font-size: 19px;
+}
+.form-container #email {
+  display: flex;
+  text-align: center;
+  font-size: 19px;
+  margin: 13px;
+  width: 323px;
+  height: 27px;
+  border: 2px solid #333333;
+  border-radius: 9px;
+}
+.form-container #submit {
+  margin: 13px;
+  padding: 5px;
+  font-size: 19px;
+  background-color: #d4d4d4;
+  border: 2px solid #333333;
+  border-radius: 9px;
+}
+.form-container #submit:hover {
+  background-color: green;
+  transition: background-color 2s;
+}
+@media (max-width: 568px) {
+  .form-container {
+    margin-top: 320px;
+  }
+}
+
+.contents {
+  width: 100%;
+  margin: 0, auto;
+}
+
+#features {
+  padding: 23px;
+}
+#features .list {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+#features .icon {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin: 41px 17px 0px 0px;
+  padding: 13px;
+  color: #a1a0a0;
+}
+#features .icon .material-icons {
+  transform: scale(2, 2);
+}
+@media (max-width: 568px) {
+  #features .icon {
+    display: none;
+  }
+}
+#features .discription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+}
+@media (max-width: 568px) {
+  #features .discription {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    height: 250px;
+  }
+}
+@media (max-width: 568px) {
+  #features {
+    margin-top: 0px;
+  }
+}
+
+#video {
+  display: flex;
+  margin-top: 71px;
+  justify-content: center;
+}
+#video iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  margin-top: 71px;
+  justify-content: center;
+  text-align: center;
+  padding: 101px;
+}
+#pricing img {
+  width: 250px;
+  height: 170px;
+  border: 3px solid black;
+}
+#pricing #macbook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%/3);
+  margin: 11px;
+  border: 7px solid #5a6669;
+  border-radius: 9px;
+}
+#pricing #iphone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%/3);
+  margin: 11px;
+  border: 7px solid #5a6669;
+  border-radius: 9px;
+}
+#pricing #ipad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%/3);
+  margin: 11px;
+  border: 7px solid #5a6669;
+  border-radius: 9px;
+}
+#pricing .option {
+  font-size: 23px;
+  text-align: center;
+  padding: 7px;
+}
+#pricing .btn {
+  padding: 13px;
+  width: 97px;
+}
+#pricing .btn:hover {
+  background-color: red;
+  transition: background-color 2s;
+}
+#pricing li {
+  text-align: left;
+}
+@media (max-width: 568px) {
+  #pricing {
+    flex-direction: column;
+  }
+  #pricing #macbook, #pricing #iphone, #pricing #ipad {
+    max-width: 568px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+}
